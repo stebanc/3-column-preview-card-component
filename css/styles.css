@@ -1,0 +1,118 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__title {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+
+.card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  font-size: 15px;
+  border: #f2f2f2 solid 2px;
+}
+
+.card__btn--sedans {
+  color: #e38826;
+}
+
+.card__btn--suvs {
+  color: #006970;
+}
+
+.card__btn--luxury {
+  color: #004241;
+}
+
+.card__btn:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card__item {
+  width: 100%;
+  height: 100%;
+  padding: 55px;
+}
+
+.card__item--sedans {
+  background-color: #e38826;
+}
+
+.card__item--suvs {
+  background-color: #006970;
+}
+
+.card__item--luxury {
+  background-color: #004241;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 90%;
+  }
+  .card__text {
+    padding-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
